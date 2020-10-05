@@ -33,7 +33,7 @@ public class StepUI : MonoBehaviour
             return;
         }
 
-        EnableBackgrounds(true);
+        ToggleBackgrounds(true);
 
         currentStepId = stepId;
 
@@ -46,7 +46,7 @@ public class StepUI : MonoBehaviour
         }
     }
 
-    private void EnableBackgrounds(bool state)
+    private void ToggleBackgrounds(bool state)
     {
         textBackground.gameObject.SetActive(state);
         buttonsBackground.gameObject.SetActive(state);
