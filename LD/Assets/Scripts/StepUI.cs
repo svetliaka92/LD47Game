@@ -29,7 +29,7 @@ public class StepUI : MonoBehaviour
             || string.IsNullOrEmpty(stepText)
             || answers == null || answers.Count <= 0)
         {
-            EnableBackgrounds(false);
+            ToggleBackgrounds(false);
             return;
         }
 

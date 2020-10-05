@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc18e45624221b4498c641a305532590, type: 3}
-  m_Name: Start2
+  m_Name: Start3
   m_EditorClassIdentifier: 
-  stepId: Start2
-  stepText: YEP
+  stepId: Start3
+  stepText: Neigh!
   stepAnswers:
   - answerText: 1. Back
     nextStepId: Start

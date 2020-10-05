@@ -15,5 +15,7 @@ MonoBehaviour:
   stepId: Start
   stepText: You're finally awake!
   stepAnswers:
-  - answerText: Next...
+  - answerText: 1. YEP
     nextStepId: Start2
+  - answerText: 2. No
+    nextStepId: Start3

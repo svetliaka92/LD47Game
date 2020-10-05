@@ -52,6 +52,9 @@ public class StepProcessor : MonoBehaviour
             || inputNumber < 1 || inputNumber > 6)
             return;
 
+        if (inputNumber > stepsDict[currentStep].stepAnswers.Count)
+            return;
+
         ProcessAnswer(currentStep, (inputNumber - 1));
     }
 
@@ -70,9 +73,10 @@ public class StepProcessor : MonoBehaviour
     {
         if (stepsDict.ContainsKey(stepId))
         {
-            Step currentStep = stepsDict[stepId];
+            Step step = stepsDict[stepId];
+            currentStep = step.stepId;
 
-            _stepUI.LoadStep(currentStep.stepId, currentStep.stepText, currentStep.stepAnswers);
+            _stepUI.LoadStep(step.stepId, step.stepText, step.stepAnswers);
         }
     }
 }
